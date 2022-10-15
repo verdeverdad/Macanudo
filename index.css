@@ -1,0 +1,29 @@
+.navbar {
+    z-index: 11;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    opacity: 86%;
+  
+  }
+  
+  .nav-link {
+    margin-left:30px;
+    margin-right: 10px;
+    color: rgb(226, 199, 199);
+  }
+
+ul {
+ margin-left:110px ;
+}
+.navbar-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+  }
+  
+  .navbar-logo img {
+    display: block;
+    height: auto;
+  
+  }
+  
