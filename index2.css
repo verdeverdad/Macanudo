@@ -35,7 +35,7 @@ ul {
 
     overflow:hidden;
 
-    padding-bottom:56.25%;
+    padding-bottom:400px;
 
     position:relative;
 
@@ -49,9 +49,9 @@ ul {
 
     top:0;
 
-    height:150%;
+    height:100%;
 
-    width:150%;
+    width:100%;
 
     position:absolute;
 
