@@ -51,3 +51,8 @@ ul {
     position:absolute;
 
 }
+
+.card {
+  border: 40px solid rgb(243, 237, 237);
+  border-radius: 50px;
+}
