@@ -1,3 +1,9 @@
+body {
+background-color: #1e1e1e;
+color:#e1e1e1 ;
+
+}
+
 .navbar {
     z-index: 11;
     -webkit-backdrop-filter: blur(4px);
@@ -7,24 +13,24 @@
   }
   
   .nav-link {
-    margin-left:30px;
+    margin-left: 30px;
     margin-right: 10px;
-    color: #e5e6e1;
+    color: #e1e1e1;
   }
 
-ul {
- margin-left:110px ;
-}
+
 .navbar-logo {
     display: inline-block;
     vertical-align: middle;
-    width: 100px;
+    width: 80px;
+    
   }
-  
+ 
+   
   .navbar-logo img {
     display: block;
     height: auto;
-  
+
   }
   .map-responsive{
 
