@@ -104,3 +104,37 @@ body {
   opacity: 1;
   transform: translate(0, 0);
 }
+
+.btn {
+  box-shadow: 2px 2px 2px 2px #495223
+}
+
+.shadown, .card {
+  box-shadow: 1px 1px 1px #97bd91;
+}
+
+.contenedor {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.texto-abajo {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
