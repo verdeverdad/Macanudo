@@ -64,7 +64,24 @@ body {
   border-top-left-radius: 8em 5em;
 }
 
+.spanletras {
+  font-size:larger;
+  color: #dab926;
+  text-shadow: 1px 1px  #d84e18;
 
+}
+.spanletrasrojo {
+  color:#d54722;
+  text-shadow: 1px 1px  #d8d818;
+  line-height : 65px;
+
+}
+
+.spanletrasverde {
+  color: #70802c;
+ font-size: xx-large;
+ text-shadow: 1px 1px  #d8d818;
+}
   
 .fadeTop {
   opacity: 0; 
