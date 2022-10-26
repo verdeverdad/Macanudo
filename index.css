@@ -105,7 +105,7 @@ body {
   transform: translate(0, 0);
 }
 
-.btn {
+.btn-productos{
   box-shadow: 2px 2px 2px 2px #495223
 }
 
@@ -127,9 +127,8 @@ body {
 
 .texto-abajo {
   position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 10px;
+  right: 10px;
 }
 
 .centrado {
