@@ -81,9 +81,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <div class="card mb-3" style="max-width: 540px; max-height: 250px ;">
+
+        <div class="card mb-3" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
-            <div class="col-4 card-img" style="max-width: 200px;">
+            <div class="col-4 card-img">
               <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
             </div>
             <div class="col-8">
@@ -95,12 +96,13 @@
                   <div class="form row">
                     <div class="form group col-sm-6">
                       <label for="cantidad">Cantidad: </label>
-                      <input type="number" id="cantidad" name="cantidad" min="1" max="5" placeholder="1" rows="2">
+                      <input type="number" id="cantidad" width="30px" name="cantidad" min="1" max="5" placeholder="1"
+                        rows="2">
                     </div>
 
                     <div class="form group col-sm-6">
-                      <label for="cantidad">Precio: $ </label>
-                      <input type="number" id="cantidad" name="cantidad" min="300" max="5" placeholder="1" rows="2">
+                      <label for="precio">Precio: </label>
+                      <input type="number" id="precio" name="precio" min="1" max="5" placeholder="1" rows="2">
                     </div>
                   </div>
                 </form><br>
@@ -110,10 +112,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-
-        <div class="card mb-3" style="max-width: 540px; max-height: 250px ;">
+        <div class="card mb-3" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
             <div class="col-4 card-img">
               <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
@@ -143,16 +142,53 @@
           </div>
         </div>
       </div>
+
+      <div class="col-lg-6 mb-2">
+
+        <div class="card " style="max-width:460px; max-height: 240px;">
+          <div class="card-header">
+            <strong>Métodos de envío</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="
+        list-group-item">
+              <input class="form" type="radio" id="premium" onchange="envio()" class="local" name="local">
+              Maldonado primer y tercer jueves de cada mes. $60
+            </li>
+            <li class="list-group-item"><input class="form" type="radio" id="standard" onchange="envio()" class="local"
+                name="local">
+              Montevideo, Ciudad de la Costa y Costa de Oro todos los jueves. $60</li>
+            <li class="list-group-item"><input class="form" type="radio" id="standard" onchange="envio()" class="local"
+                name="local">
+              Retiro en un Punto Macanudo. $ 0</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card " style="max-width:360px; max-height: 240px; margin-top: 30px; margin-left: 25px ;">
+            <div class="card-header bg-light">
+              <h6><strong>SubTotal: $ </strong><span id="totalSub" class="form" style="color:black"></span></h6>
+            </div>
+            <div class="card-body text-success">
+              <p><strong>Envío: $ </strong><span id="envio" class="form">0</span></p>
+            </div>
+            <div class="card-footer">
+              <h5><strong>Total: $ </strong><span id="total" class="form" style="color:black"></span></h5>
+            </div>
+            <button type="submit" class="btn shadown" style="background-color: #4554a4; color:#e1e1e1 ;"
+              id="paso2"><strong>Confirmar
+                compra </strong></button>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
-  <div class="container">
+  <div class=" container">
     <footer class="mt-5" style="color: #ebf0f3; opacity:80% ;">
       <div class="row">
         <div class="col-sm-4 d-flex flex-column align-items-center">
