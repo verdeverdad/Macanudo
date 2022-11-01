@@ -80,9 +80,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-
-        <div class="card mb-3" style="max-width: 540px; max-height: 450px ;">
+      <div class="col-lg-6 mb-5">
+        <div class="card mb-5" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
             <div class="col-4 card-img">
               <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
@@ -101,18 +100,50 @@
                     </div>
 
                     <div class="form group col-sm-6">
-                      <label for="precio">Precio: </label>
-                      <input type="number" id="precio" name="precio" min="1" max="5" placeholder="1" rows="2">
+                      <label for="precio">Precio: $</label>
+                      <input type="number" value="300" readonly id="precio" name="precio" min="1" max="5"
+                         width="3em">
                     </div>
                   </div>
                 </form><br>
-                <button class="btn btn-outline-dark shadown">eliminar</button>
-                <button class="btn btn-outline-dark">Comprar</button>
+                <button class="btn shadown" style="color:#f04643;">Eliminar</button>
+                <button class="btn btn-outline shadown " style="color: #4554a4; ">Comprar</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3" style="max-width: 540px; max-height: 450px ;">
+        <div class="card mb-5" style="max-width: 540px; max-height: 450px ;">
+          <div class="row g-0">
+            <div class="col-4 card-img">
+              <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Colorado </h5>
+
+                <form id="datosEnvio" class="was-validated">
+
+                  <div class="form row">
+                    <div class="form group col-sm-6">
+                      <label for="cantidad">Cantidad: </label>
+                      <input type="number" id="cantidad" width="30px" name="cantidad" min="1" max="5" placeholder="1"
+                        rows="2">
+                    </div>
+
+                    <div class="form group col-sm-6">
+                      <label for="precio">Precio: $</label>
+                      <input type="number" id="precio" value="300" readonly name="precio" min="1" max="5"
+                       rows="2">
+                    </div>
+                  </div>
+                </form><br>
+                <button class="btn shadown" style="color:#f04643;">Eliminar</button>
+                <button class="btn btn-outline shadown " style="color: #4554a4; ">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
             <div class="col-4 card-img">
               <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
@@ -130,22 +161,23 @@
                     </div>
 
                     <div class="form group col-sm-6">
-                      <label for="cantidad">Precio: </label>
-                      <input type="number" id="cantidad" name="cantidad" min="1" max="5" placeholder="1" rows="2">
+                      <label for="cantidad">Precio: $</label>
+                      <input type="number" id="cantidad" size=4 name="cantidad" value="300" readonly
+                        rows="2">
                     </div>
                   </div>
                 </form><br>
-                <button class="btn btn-outline-dark shadown">eliminar</button>
-                <button class="btn btn-outline-dark">Comprar</button>
+                <button class="btn shadown" style="color:#f04643;">Eliminar</button>
+                <button class="btn btn-outline shadown " style="color: #4554a4; ">Comprar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6 mb-2">
+      <div class="col-lg-6 mb-5">
 
-        <div class="card " style="max-width:460px; max-height: 240px;">
+        <div class="card" style="max-width:460px; max-height: 240px;">
           <div class="card-header">
             <strong>Métodos de envío</strong>
           </div>
@@ -164,25 +196,24 @@
           </ul>
         </div>
 
-        <div class="col-sm-6">
-          <div class="card " style="max-width:360px; max-height: 240px; margin-top: 30px; margin-left: 20px ;">
-            <div class="card-header bg-light">
-              <h6><strong>SubTotal: $ </strong><span id="totalSub" class="form" style="color:black"></span></h6>
-            </div>
-            <div class="card-body text-success">
-              <p><strong>Envío: $ </strong><span id="envio" class="form">0</span></p>
-            </div>
-            <div class="card-footer">
-              <h5><strong>Total: $ </strong><span id="total" class="form" style="color:black"></span></h5>
-            </div>
-            <button type="submit" class="btn shadown" style="background-color: #4554a4; color:#e1e1e1 ;"
-              id="paso2"><strong>Confirmar
-                compra </strong></button>
-
+        <div class="card" style="max-width:240px; max-height: 180px; margin-top: 30px; margin-left: 110px;">
+          <div class="card-header bg-light">
+            <h6><strong>SubTotal: $ </strong><span id="totalSub" class="form" style="color:black"></span></h6>
           </div>
+          <div class="card-body text-success">
+            <p><strong>Envío: $ </strong><span id="envio" class="form">0</span></p>
+          </div>
+          <div class="card-footer">
+            <h5><strong>Total: $ </strong><span id="total" class="form" style="color:black"></span></h5>
+          </div>
+          <button type="submit" class="btn shadown" style="background-color: #4554a4; color:#e1e1e1 ;"
+            id="paso2"><strong>Confirmar
+              compra </strong></button>
+
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
