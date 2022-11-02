@@ -21,7 +21,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
   <!-- endbuild -->
-  <script src="index.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -78,13 +78,13 @@
   </nav>
   <!--  NAVBAR --- NAVBAR ---- NAVBAR ----NAVBAR --- NAVBAR ---- NAVBAR----->
 
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-lg-6 mb-5">
-        <div class="card mb-5" style="max-width: 540px; max-height: 450px ;">
+        <div class="card mb-5 shadown-gris" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
             <div class="col-4 card-img">
-              <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
+              <img src="img/producto .png" class='img-fluid img-thumbnail shadown' alt="...">
             </div>
             <div class="col-8">
               <div class="card-body">
@@ -95,14 +95,13 @@
                   <div class="form row">
                     <div class="form group col-sm-6">
                       <label for="cantidad">Cantidad: </label>
-                      <input type="number" id="cantidad" width="30px" name="cantidad" min="1" max="5" placeholder="1"
-                        rows="2">
+                      <input type="number" id="cantidad" class="cantidad" width="30px" name="cantidad" value="300"
+                        placeholder="1" rows="2">
                     </div>
 
                     <div class="form group col-sm-6">
                       <label for="precio">Precio: $</label>
-                      <input type="number" value="300" readonly id="precio" name="precio" min="1" max="5"
-                         width="3em">
+                      <input type="number" value="300" readonly id="precio" name="precio" width="3em">
                     </div>
                   </div>
                 </form><br>
@@ -112,10 +111,10 @@
             </div>
           </div>
         </div>
-        <div class="card mb-5" style="max-width: 540px; max-height: 450px ;">
+        <div class="card mb-5 shadown-gris" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
             <div class="col-4 card-img">
-              <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
+              <img src="img/producto .png" class='img-fluid img-thumbnail shadown' alt="...">
             </div>
             <div class="col-8">
               <div class="card-body">
@@ -126,14 +125,13 @@
                   <div class="form row">
                     <div class="form group col-sm-6">
                       <label for="cantidad">Cantidad: </label>
-                      <input type="number" id="cantidad" width="30px" name="cantidad" min="1" max="5" placeholder="1"
-                        rows="2">
+                      <input type="number" id="cantidad" class="cantidad" width="30px" value="1" name="cantidad"
+                        placeholder="1" rows="2">
                     </div>
 
                     <div class="form group col-sm-6">
                       <label for="precio">Precio: $</label>
-                      <input type="number" id="precio" value="300" readonly name="precio" min="1" max="5"
-                       rows="2">
+                      <input type="number" id="precio" value="1" readonly name="precio" rows="2">
                     </div>
                   </div>
                 </form><br>
@@ -143,10 +141,10 @@
             </div>
           </div>
         </div>
-        <div class="card mb-5" style="max-width: 540px; max-height: 450px ;">
+        <div class="card mb-5 shadown-gris" style="max-width: 540px; max-height: 450px ;">
           <div class="row g-0">
             <div class="col-4 card-img">
-              <img src="img/producto .png" class='img-fluid img-thumbnail' alt="...">
+              <img src="img/producto .png" class='img-fluid img-thumbnail shadown' alt="...">
             </div>
             <div class="col-8">
               <div class="card-body">
@@ -157,12 +155,12 @@
                   <div class="form row">
                     <div class="form group col-sm-6">
                       <label for="cantidad">Cantidad: </label>
-                      <input type="number" id="cantidad" name="cantidad" min="1" max="5" placeholder="1" rows="2">
+                      <input type="number" id="cantidad" class="cantidad" name="cantidad" placeholder="1" rows="2">
                     </div>
 
                     <div class="form group col-sm-6">
                       <label for="cantidad">Precio: $</label>
-                      <input type="number" id="cantidad" size=4 name="cantidad" value="300" readonly
+                      <input type="number" id="cantidad" class="cantidad" size=4 name="cantidad" value="1" readonly
                         rows="2">
                     </div>
                   </div>
@@ -175,41 +173,40 @@
         </div>
       </div>
 
-      <div class="col-lg-6 mb-5">
+      <div class="col-lg-6 mb-5 ">
 
-        <div class="card" style="max-width:460px; max-height: 240px;">
+        <div class="card shadown-gris" style="max-width:460px; max-height: 260px;">
           <div class="card-header">
             <strong>Métodos de envío</strong>
           </div>
           <ul class="list-group list-group-flush">
             <li class="
         list-group-item">
-              <input class="form" type="radio" id="premium" onchange="envio()" class="local" name="local">
+              <input class="form" type="radio" id="premium" onchange="envio()" value="1" class="local" name="local">
               Maldonado primer y tercer jueves de cada mes. $60
             </li>
             <li class="list-group-item"><input class="form" type="radio" id="standard" onchange="envio()" class="local"
                 name="local">
               Montevideo, Ciudad de la Costa y Costa de Oro todos los jueves. $60</li>
-            <li class="list-group-item"><input class="form" type="radio" id="standard" onchange="envio()" class="local"
+            <li class="list-group-item"><input class="form" type="radio" id="express" onchange="envio()" class="local"
                 name="local">
               Retiro en un Punto Macanudo. $ 0</li>
           </ul>
         </div>
 
-        <div class="card" style="max-width:240px; max-height: 180px; margin-top: 30px; margin-left: 110px;">
-          <div class="card-header bg-light">
-            <h6><strong>SubTotal: $ </strong><span id="totalSub" class="form" style="color:black"></span></h6>
+        <div class="card bg-light shadown-gris" style="max-width:240px; max-height: 300px; margin-top: 30px; margin-left: 75px;">
+          <div class="card-header">
+            <h6><strong>SubTotal: $ </strong><span id="totalSub" class="form" onchange="calculoSubTotal()"></span></h6>
           </div>
-          <div class="card-body text-success">
+          <div class="card-body">
             <p><strong>Envío: $ </strong><span id="envio" class="form">0</span></p>
           </div>
           <div class="card-footer">
-            <h5><strong>Total: $ </strong><span id="total" class="form" style="color:black"></span></h5>
-          </div>
-          <button type="submit" class="btn shadown" style="background-color: #4554a4; color:#e1e1e1 ;"
-            id="paso2"><strong>Confirmar
-              compra </strong></button>
+            <h5><strong>Total: $ </strong><span id="total" class="form" onchange="calculoTotal()"></span></h5>
+            <button type="submit" class="btn btn-lg shadown" style="color: #4554a4;" id="paso2"><strong>Confirmar
+                compra </strong></button>
 
+          </div>
         </div>
       </div>
     </div>
@@ -284,6 +281,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

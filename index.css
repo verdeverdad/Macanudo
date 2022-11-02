@@ -124,13 +124,16 @@ body {
 }
 
 .btn-productos{
-  box-shadow: 2px 2px 2px 2px #495223
+  box-shadow: 2px 2px 2px var(--negro)
 }
 
 .shadown{
-  box-shadow: 1px 1px 1px #519746;
+  box-shadow: 2px 4px 4px var(--negro);
 }
+.shadown-gris {
+  box-shadow: 2px 3px 3px var(--gris);
 
+}
 .contenedor {
   position: relative;
   display: block;
