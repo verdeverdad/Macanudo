@@ -53,7 +53,10 @@ body, h3 {
 
 }
 
-
+footer, footer svg {
+  color: var(--blanco);
+  opacity:80% ;
+}
 .map-responsive {
 
   overflow: hidden;
@@ -138,12 +141,29 @@ body, h3 {
 }
 
 .shadown-gris {
-  box-shadow: 2px 3px 3px var(--gris);
+  box-shadow: 1px 2px 2px var(--gris);
 
 }
 
-.shadown-rojo {
+.shadown-lila {
   box-shadow: 2px 2px 2px var(--lila);
+
+}
+.shadown-rojo {
+  box-shadow: 2px 2px 2px var(--rojo);
+
+}
+.shadown-verdeC {
+  box-shadow: 2px 2px 2px var(--verde-claro);
+
+}
+.shadown-amarillo {
+  box-shadow: 2px 2px 2px var(--amarillo);
+
+}
+
+.shadown-blanco {
+  box-shadow: 2px 2px 2px var(--blanco);
 
 }
 
@@ -173,8 +193,8 @@ body, h3 {
 }
 
 .abajo-centrado {
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  bottom: 2px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
