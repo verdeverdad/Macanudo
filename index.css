@@ -372,7 +372,8 @@ footer svg {
 
 .parrafoProd {
   position: relative;
-  bottom: 1%;
+  max-width:480px ;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -381,5 +382,8 @@ footer svg {
   max-width: 520px;
   max-height: 560px;
   background-color: #F5ADA9;
-  color: var(--blanco);
+  color: var(--negro);
+}
+.card-lila h4, .card-lila p{
+  background-color: var(--lila);
 }
