@@ -22,10 +22,6 @@ h3, h2{
 
 }
 
-#club {
-  text-shadow:#f5ada9;
-}
-
 .navbar {
   position: relative;
   display: -ms-flexbox;
@@ -36,8 +32,6 @@ h3, h2{
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
-
   z-index: 11; /*elementos por delante*/
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px); /*desenfoque*/
@@ -52,14 +46,12 @@ h3, h2{
   color: #e1e1e1;
 }
 
-
 .navbar-logo {
   display: inline-block;
   vertical-align: middle;
   width: 80px;
 
 }
-
 
 .navbar-logo img {
   display: block;
@@ -201,9 +193,8 @@ footer svg {
 
 .abajo-centrado {
   position: relative;
-  bottom: 2px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 18px;
+  
 }
 
 
@@ -307,6 +298,37 @@ footer svg {
   border-radius: 0.25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+.rojo {
+  color: var(--rojo);
+}
+
+.negro {
+  color: var(--negro);
+}
+
+.azul {
+  color: var(--azul);
+}
+
+.amarillo {
+  color: var(--amarillo);
+}
+
+.verde {
+  color: var(--verde);
+}
+
+.verdeC {
+  color: var(--verde-claro);
+}
+
+.lila {
+  color: var(--lila);
+}
+
+.gris {
+  color: var(--gris);
+}
 
 .btn-rojo {
   background-color: var(--rojo);
@@ -341,11 +363,20 @@ footer svg {
   bottom: 10px;
   right: 10px;
 }
-
+.btn-derecho-sm {
+  position: absolute;
+  bottom: 6px;
+  right: 4px;
+}
 .btn-medio {
   position: absolute;
   bottom: 10px;
   right: 65px;
+}
+.btn-medio-sm {
+  position: absolute;
+  bottom: 6px;
+  right: 44px;
 }
 
 .btn-izquierdo {
@@ -357,7 +388,7 @@ footer svg {
 .tituloProducto {
   text-align: center;
   position: relative;
-  bottom: 5%;
+  bottom: 9%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
