@@ -22,6 +22,10 @@ h3, h2{
 
 }
 
+#club {
+  text-shadow:#f5ada9;
+}
+
 .navbar {
   position: relative;
   display: -ms-flexbox;
@@ -34,14 +38,13 @@ h3, h2{
   justify-content: space-between;
 
 
-  z-index: 11;
+  z-index: 11; /*elementos por delante*/
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /*desenfoque*/
   opacity: 86%;
   text-align: justify;
 
 }
-
 
 .nav-link {
   margin-left: 10px;
@@ -76,6 +79,9 @@ footer svg {
   margin-bottom: 0%;
   margin-left: 0%;
   margin-right: 0%;
+  text-align: center;
+  position: relative;
+  display: block;
 }
 
 .productos {
@@ -378,6 +384,7 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 70px;
   font-stretch: extra-expanded;
+  color: var(--gris) ;
 }
 
 .btn-club {
@@ -388,9 +395,10 @@ h1 {
   color:var(--gris);
   background:var(--negro);
   border-radius:50px;
-  border: 3px solid var(--lila);
+  border: 3px solid var(--azul);
   transition: all 0.9s;
   text-align: center;
   width:60%;
-  box-shadow: -5px 1px 3px 2px var(--azul);
+  box-shadow: -5px 1px 3px 2px var(--lila);
+  
 }
