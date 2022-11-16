@@ -1,7 +1,7 @@
 :root {
-  --lila: #f5ada9;
+  --lila: #f4aeaa;
   --rojo: #f04643;
-  --amarillo: #dab926;
+  --amarillo: #dab827;
   --azul: #4554a4;
   --verde: #70802c;
   --verde-claro: #92ad3d;
@@ -388,7 +388,7 @@ footer svg {
 .tituloProducto {
   text-align: center;
   position: relative;
-  bottom: 9%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
