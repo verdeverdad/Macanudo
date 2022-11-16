@@ -85,7 +85,7 @@
     <div>
 
         <br>
-        <img src="img/club-macanudo.png" class="nav d-block w-100" alt="..." >
+        <img src="img/club-macanudo.png" class="nav d-block w-100" alt="...">
         <br><br>
     </div>
 
@@ -93,7 +93,7 @@
 
     <div class="container-fluid">
 
-        <div class="row  mr-0  ml-0 ">
+        <div class="row mt-3  mr-0  ml-0 ">
             <div class="col">
                 <h1 class="text-center text-shadow" style="color: var(--gris);">¡Tenemos una canasta especial para ti!
                     <br> <img src="img/canasta.png" width="25%">
@@ -108,7 +108,8 @@
         <div class="row">
 
             <div class="col text-center">
-                <a href="mi_carrito.html" class=" btn1 btn-club ">Sé parte de nuestro club</a>
+                <a href="" class=" btn1 btn-club " data-toggle="modal"
+                data-target="#exampleModal">Sé parte de nuestro club</a>
 
             </div>
         </div>
@@ -221,13 +222,13 @@
         <div class="row  mr-0  ml-0 ">
             <div class="col">
                 <h1 class="text-center  scroll-content fadeLeft" style=" color: var(--rojo) ;">
-                    tienen DESCUENTOS</h1><br><br>
+                    tienen descuentos</h1><br><br>
             </div>
         </div>
         <div class="row  mr-0  ml-0 ">
             <div class="col">
                 <h1 class="text-center  scroll-content fadeLeft" style=" color: var(--amarillo) ;">
-                    el packaging es MÁS SUSTENTABLE <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    el packaging es más sustentable <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                         fill="currentColor" class="bi bi-box2-heart ml-3" viewBox="0 0 16 16">
                         <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z" />
                         <path
@@ -237,8 +238,8 @@
         </div>
         <div class="row  mr-0  ml-0 ">
             <div class="col">
-                <h3 class="text-center  scroll-content fadeLeft" style=" color: var(--verde-claro) ;">
-                    y como si fuera poco</h3><br>
+                <h4 class="text-center  scroll-content fadeLeft" style=" color: var(--verde-claro) ;">
+                    y como si fuera poco</h4><br>
             </div>
         </div>
         <div class="row  mr-0  ml-0 ">
@@ -254,11 +255,86 @@
         <div class="row  mr-0  ml-0 ">
             <div class="col">
                 <h1 class="text-center  scroll-content fadeLeft" style=" color: var(--azul) ;">
-                    AUMENTAMOS<br>tu<br><img src="img/canasta.png" width="25%"></h1><br><br>
+                    AUMENTAMOS<br>TU<br><img src="img/canasta.png" width="25%"></h1><br><br>
             </div>
         </div>
     </div>
     </div>
+
+
+    <div class="mt-5 mr-0 mb-5 ml-0 container-fluid">
+        <div class="row">
+
+            <div class="col text-center">
+                <a href="mi_carrito.html" class=" btn1 btn-club link" data-toggle="modal"
+                    data-target="#exampleModal">unirme al club</a>
+                <br><br>
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div><br>
+
+
+    <!-- MODAL  DATOS----MODAL  DATOS----MODAL  DATOS----MODAL  DATOS------>
+    <!-- MODAL  DATOS----MODAL  DATOS----MODAL  DATOS----MODAL  DATOS------>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content align-items-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="borrar()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <h5 class="modal-title text-center" id="exampleModalLabel">¿Cómo funciona?</h5>
+                <div class="modal-body">
+                    <p>Llena el formulario, indica que tipo de canasta queres recibir y listo<br> La primer semana del mes
+                        recibirás nuestras delicias en tu casa! <br>Ah y podes cancelar tu suscripción en cualquier momento!
+                    </p>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn1 btn-azul shadown" data-toggle="modal"
+                    data-target="#exampleModal1">Unirme</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content align-items-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="borrar()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+            <h5 class="modal-title text-center" id="exampleModalLabel">Completa tus datos</h5>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <button class="btn1 btn-azul shadown" data-toggle="modal"
+                data-target="#exampleModal1">Unirme</button>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
 
 
 
