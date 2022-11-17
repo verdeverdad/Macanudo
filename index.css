@@ -330,6 +330,10 @@ footer svg {
   color: var(--gris);
 }
 
+.blanco {
+  color:var(--blanco);
+}
+
 .btn-rojo {
   background-color: var(--rojo);
 }
@@ -356,6 +360,10 @@ footer svg {
 
 .btn-lila {
   background-color: var(--lila);
+}
+ 
+.btn-blanco {
+  background-color: var(--blanco) ;
 }
 
 .btn-derecho {
