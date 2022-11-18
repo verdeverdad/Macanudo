@@ -74,8 +74,8 @@
   </nav>
   <!--  NAVBAR --- NAVBAR ---- NAVBAR ----NAVBAR --- NAVBAR ---- NAVBAR----->
 
-  <div class="ml-0 mt-0 mr-0 mb-0 contenedor">
-    <h3 class="text-center btn-blanco negro"><a class="" data-toggle="modal" data-target="#exampleModal">Constultá aquí
+  <div class="ml-0 mt-0 mr-0 mb-0 container-fluid">
+    <h3 class="text-center btn-blanco negro"><a class="" data-toggle="modal" data-target="#politicas_envio">Constultá aquí
         las formas de entrega</a></h3><br>
   </div>
 
@@ -101,9 +101,11 @@
             <br>
             <p class="card-text parrafoProd btn-verde" style=" opacity:60%;">Corteza
               verde azulada,sabor amargo y un interior intenso y ligeramente acido.<br><a class=" link"
-              data-toggle="modal" data-target="#exampleModal1" ><strong>Leer mas...</strong></a> </p>
-            <a href="favoritos" class="btn-verde btn1 btn-derecho shadown"><svg xmlns="http://www.w3.org/2000/svg"
-                width="20" height="20" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                data-toggle="modal" data-target="#exampleModal1"><strong>Leer mas...</strong></a> </p>
+
+            <!--boton carrito-->
+            <a href="" class="btn-verde btn1 btn-derecho shadown"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                 <path
                   d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
               </svg></a></p>
@@ -111,9 +113,9 @@
             <br><br>
 
 
-
+            <!--boton comprar-->
             <a href="mi_carrito.html" class="btn-verde btn1 btn-medio shadown">Comprar</a>
-
+            <!--boton estrella-->
             <a href="favoritos" class="btn-verde btn1 btn-izquierdo shadown"><svg xmlns="http://www.w3.org/2000/svg"
                 width="20" height="20" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
                 <path
@@ -133,13 +135,14 @@
           style="max-width: 520px; background-color:var(--rojo)">
           <img src="img/producto.1.png" class="card-img" alt="..." width="60%">
           <div class="card-img-overlay">
-            <h4 class="card-title tituloProducto shadown" style="background-color: var(--rojo);">CAMON-BERT con tomate seco </h4>
+            <h4 class="card-title tituloProducto shadown" style="background-color: var(--rojo);">CAMON-BERT con tomate
+              seco </h4>
             <br><br>
             <p class="card-text parrafoProd" style=" opacity:60%; background-color: var(--rojo);"> Corteza
               blanca con notas picantes,
               cremos, sabor a
-              tomate<br><a class=" link"
-              data-toggle="modal" data-target="#exampleModal2" ><strong>Leer mas...</strong></a> </p>
+              tomate<br><a class=" link" data-toggle="modal" data-target="#exampleModal2"><strong>Leer
+                  mas...</strong></a> </p>
             <br><br>
 
 
@@ -180,8 +183,8 @@
             <p class="card-text parrafoProd" style=" opacity:50%; background-color: #4554a4;">Queso fermentado de
               castañas de caju. Corteza
               verde azulada con un
-              agradable sabor amargo y un interior intenso y ligeramente acido.<br>Leer mas... </p>
-            <br><br>
+              agradable sabor amargo y un interior intenso y ligeramente acido.<br><a class=" link"
+              data-toggle="modal" data-target="#exampleModal3"><strong>Leer mas...</strong></a><br>
 
 
             <a href="favoritos" class="btn-azul btn1 btn-derecho shadown"><svg xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +216,8 @@
             <p class="card-text parrafoProd" style=" opacity:50%; background-color: #92ad3d;  ">Horma de queso fresco
               recubierto con orégano y tomillo
               de sabor intenso en su interior.
-              <br>Leer mas...
+              <br><a class=" link"
+              data-toggle="modal" data-target="#exampleModal4"><strong>Leer mas...</strong></a>
             </p>
             <br><br>
 
@@ -239,7 +243,7 @@
 
     <div class="row">
 
-      <!--PARME SANO-->
+      <!--CHIFLADO-->
       <div class="col-md-6 mb-5">
 
         <div class="card text-white border border-5 border-light" style="max-width: 520px; background-color:#dab926;">
@@ -248,15 +252,16 @@
             <h4 class="card-title shadown" style="text-align: center; background-color: #dab926;  position: relative;
            bottom: 5%;
           left: 50%;
-           transform: translate(-50%, -50%);">PARME SANO</h4>
-            <br><br><br><br><br><br><br><br><br><br>
+           transform: translate(-50%, -50%);">CHIFLADO</h4>
+            <br>
             <p class="card-text parrafoProd" style=" opacity:60%; background-color: #dab926; ">Queso fermentado de
               castañas
               de cajú. Fuerte sabor umami.
               Salado con método tradicional.
               Madurado por 2 meses. Ideal
               para consumir rallado.
-              <br>Leer mas...
+              <br><a class=" link"
+              data-toggle="modal" data-target="#exampleModal5"><strong>Leer mas...</strong></a>
             </p>
             <br><br>
 
@@ -291,11 +296,12 @@
           <img src="img/prod1.png" class="card-img" alt="..." width="60%">
           <div class="card-img-overlay">
             <h4 class="card-title shadown tituloProducto" style="background-color: #F5ADA9;">QUARK</h4>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br>
             <p class="card-text parrafoProd" style="background-color: #F5ADA9; "> Queso fermentado de castañas de cajú
               ideal para acompañar desayunos y preparaciones
               tanto saladas como dulces.
-              <br>Leer mas...
+              <br><a class=" link"
+              data-toggle="modal" data-target="#exampleModal6"><strong>Leer mas...</strong></a>
             </p>
             <br><br>
 
@@ -327,13 +333,13 @@
     </div>
   </div><br>
 
-  <div class="ml-0 mt-0 mr-0 mb-0">
-    <h3 class="text-center btn-blanco negro"><a class="" data-toggle="modal" data-target="#exampleModal">Constultá aquí
+  <div class="ml-0 mt-0 mr-0 mb-0 container-fluid>
+    <h3 class="text-center btn-blanco negro"><a class="" data-toggle="modal" data-target="#politicas_envio">Constultá aquí
         las formas de entrega</a></h3><br><br>
   </div>
 
   <!--slider---slider---slider---slider---slider---slider---slider---slider----->
-  <div class="contenedor">
+  <div class="container-fluid">
     <div class="row">
       <div class="slider">
         <div class="slide-track">
@@ -393,7 +399,7 @@
 
   <!--MODAL POLITICAS DE ENTREGA--MODAL POLITICAS DE ENTREGA--MODAL POLITICAS DE ENTREGA-->
   <!--MODAL POLITICAS DE ENTREGA--MODAL POLITICAS DE ENTREGA--MODAL POLITICAS DE ENTREGA-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  <div class="modal fade" id="politicas_envio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content align-items-center">
@@ -433,7 +439,7 @@
           </button>
 
         </div>
-        <h1 class="modal-title text-center verde">EL-ROQUE</h1>
+        <h1 class="modal-title text-center verde">EL-ROQUE<br>300$</h1>
         <div class="modal-body">
           <h6 class="verde">Queso fermentado de
             castañas de caju. Corteza
@@ -471,15 +477,19 @@
         </div>
         <h1 class="modal-title text-center rojo" id="exampleModalLabel">CAMON-BERT con tomates secos</h1>
         <div class="modal-body">
-          <h6 class="rojo"> Camembert con tomates
-            secos. Queso de corteza
-            blanca con notas picantes, centro colorado,
-            cremoso y ligeramente acido con un sutil sabor a
-            tomate
+          <h6 class="rojo">Queso fermentado de
+            castañas de caju. Corteza
+            verde azulada con un
+            agradable sabor amargo y un interior intenso y ligeramente acido.
           </h6><br>
+          <p class="rojo"> Una vez abierto conservar refrigerado, cubierto con papel o tela, dentro de un recipiente
+            cerrado.
+            Contiene microorganismos vivos, esto cambiará el saborlentamente con el pasar de los días.</p>
+          <br>
           <img class="img-fluid" src="img/camon-bert-info.png">
-          
-          <p class="rojo">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas frecuentes</a></p>
+
+          <p class="rojo">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas
+              frecuentes</a></p>
 
         </div>
 
@@ -554,22 +564,14 @@
             verde azulada con un
             agradable sabor amargo y un interior intenso y ligeramente acido.
           </h6><br>
-
-          <h4 class="text-center verde">Información nutricional</h4>
-          <p style="line-height: 30px;">
-            Porción 27g - 1/6 unidad. <br>
-            Valor energetico: 92,34Kcal/386Kj | 4,1% <br>
-            Carbohidratos: 1,9g | 0,6% <br>
-            Proteína: 3,7g | 4,9% <br>
-            Grasas totales: 7,8g | 14,2% <br>
-            Grasas saturadas: 1,5g | 6,8% <br>
-            Fibra: 0 | 0 <br>
-            Sodio: 135mg | 5,6% <br></p>
-          <p>*Valores diarios con base a una dieta de 2500kcal u 8400kj.
-            Sus valores diarios pueden ser mayores dependiendo de sus necesidades energeticas.
-          </p>
+          <p class="verde"> Una vez abierto conservar refrigerado, cubierto con papel o tela, dentro de un recipiente
+            cerrado.
+            Contiene microorganismos vivos, esto cambiará el saborlentamente con el pasar de los días.</p>
           <br>
-          <p>¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas frecuentes</a></p>
+          <img class="img-fluid" src="img/roque-info.png">
+
+          <p class="verde">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas
+              frecuentes</a></p>
 
         </div>
 
@@ -592,30 +594,23 @@
           </button>
 
         </div>
-        <h1 class="modal-title text-center verde" id="exampleModalLabel">ROQUE</h1>
+        <h1 class="modal-title text-center amarillo" id="exampleModalLabel">CHIFLADO</h1>
         <div class="modal-body">
-          <h6 class="verde"> Camembert con tomates
-            secos. Queso de corteza
-            blanca con notas picantes, centro colorado,
-            cremoso y ligeramente acido con un sutil sabor a
-            tomate
+          <h6 class="amarillo">Queso fermentado de
+            castañas
+            de cajú. Fuerte sabor umami.
+            Salado con método tradicional.
+            Madurado por 2 meses. Ideal
+            para consumir rallado.
           </h6><br>
-
-          <h4 class="text-center verde">Información nutricional</h4>
-          <p style="line-height: 30px;">
-            Porción 27g - 1/6 unidad. <br>
-            Valor energetico: 92,34Kcal/386Kj | 4,1% <br>
-            Carbohidratos: 1,9g | 0,6% <br>
-            Proteína: 3,7g | 4,9% <br>
-            Grasas totales: 7,8g | 14,2% <br>
-            Grasas saturadas: 1,5g | 6,8% <br>
-            Fibra: 0 | 0 <br>
-            Sodio: 135mg | 5,6% <br></p>
-          <p>*Valores diarios con base a una dieta de 2500kcal u 8400kj.
-            Sus valores diarios pueden ser mayores dependiendo de sus necesidades energeticas.
-          </p>
+          <p class="amarillo"> Una vez abierto conservar refrigerado, cubierto con papel o tela, dentro de un recipiente
+            cerrado.
+            Contiene microorganismos vivos, esto cambiará el saborlentamente con el pasar de los días.</p>
           <br>
-          <p>¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas frecuentes</a></p>
+          <img class="img-fluid" src="img/chiflado-info.png">
+
+          <p class="amarillo">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas
+              frecuentes</a></p>
 
         </div>
 
@@ -638,29 +633,20 @@
           </button>
 
         </div>
-        <h1 class="modal-title text-center verde" id="exampleModalLabel">ROQUE</h1>
+        <h1 class="modal-title text-center negro" id="exampleModalLabel">ROQUE</h1>
         <div class="modal-body">
-          <h6 class="verde">Queso fermentado de
-            castañas de caju. Corteza
-            verde azulada con un
-            agradable sabor amargo y un interior intenso y ligeramente acido.
+          <h6 class="negro">ueso fermentado de castañas de cajú
+            ideal para acompañar desayunos y preparaciones
+            tanto saladas como dulces.
           </h6><br>
-
-          <h4 class="text-center verde">Información nutricional</h4>
-          <p style="line-height: 30px;">
-            Porción 27g - 1/6 unidad. <br>
-            Valor energetico: 92,34Kcal/386Kj | 4,1% <br>
-            Carbohidratos: 1,9g | 0,6% <br>
-            Proteína: 3,7g | 4,9% <br>
-            Grasas totales: 7,8g | 14,2% <br>
-            Grasas saturadas: 1,5g | 6,8% <br>
-            Fibra: 0 | 0 <br>
-            Sodio: 135mg | 5,6% <br></p>
-          <p>*Valores diarios con base a una dieta de 2500kcal u 8400kj.
-            Sus valores diarios pueden ser mayores dependiendo de sus necesidades energeticas.
-          </p>
+          <p class="negro"> Una vez abierto conservar refrigerado, cubierto con papel o tela, dentro de un recipiente
+            cerrado.
+            Contiene microorganismos vivos, esto cambiará el saborlentamente con el pasar de los días.</p>
           <br>
-          <p>¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas frecuentes</a></p>
+          <img class="img-fluid" src="img/untable-info.png">
+
+          <p class="negro">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas
+              frecuentes</a></p>
 
         </div>
 

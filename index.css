@@ -169,9 +169,11 @@ footer svg {
   position: relative;
   display: block;
   text-align: center;
-  
+  margin-right: auto;
+  margin-left: auto;
 }
 
+}
 .texto-encima {
   position: absolute;
   top: 10px;
@@ -421,7 +423,7 @@ footer svg {
 
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 70px;
+ 
   font-stretch: extra-expanded;
   color: var(--gris) ;
 }
