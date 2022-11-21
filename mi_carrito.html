@@ -41,18 +41,17 @@
 
     <a class="navbar-brand navbar-logo" href="index.html"><img src="img/castaña negro.png" width="60%"></a>
 
-    <a class="nav-link" href="mi_carrito.html" class="ml-0"><svg
-      xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart2"
-      viewBox="0 0 16 16">
-      <path
-        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-    </svg><span class="badge bg-danger rounded-pill">14</span></a>
+    <a class="nav-link" href="mi_carrito.html" class="ml-0"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+        height="32" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+        <path
+          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+      </svg><span class="badge bg-danger rounded-pill">14</span></a>
     <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-   
+
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="quienes_somos.html">NOSOTROS</a></li>
@@ -78,9 +77,9 @@
                 d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
             </svg><span class="badge bg-danger rounded-pill">14</span></a></li>
       </ul>
-  
+
     </div>
-   
+
   </nav>
   <!--  NAVBAR --- NAVBAR ---- NAVBAR ----NAVBAR --- NAVBAR ---- NAVBAR----->
 
@@ -212,7 +211,7 @@
             <li class="
         list-group-item">
               <input class="form" type="radio" id="premium" onchange="envio()" value="1" class="local" name="local">
-              Maldonado primer y tercer jueves de cada mes. $60
+              Maldonado primer y tercer viernes de cada mes. $60
             </li>
             <li class="list-group-item"><input class="form" type="radio" id="standard" onchange="envio()" class="local"
                 name="local">
@@ -233,13 +232,98 @@
           </div>
           <div class="card-footer text-light">
             <h5><strong>Total: $ </strong><span id="total" class="form" onchange="calculoTotal()"></span></h5><br>
-            <button type="submit" class="btn btn-lg shadown bg-light" style="color: #4554a4;" id=""><strong>Confirmar
+            <a href="" class="" data-toggle="modal" data-target="#exampleModal6">Confirmar</a>
+
+            <button type="submit" class="btn btn-lg shadown bg-light" style="color: #4554a4;" id="">
+              <strong>Confirmar
                 compra </strong></button>
 
           </div>
         </div>
       </div>
+
+      <!-- MODAL TERMINOS Y CONDICIONES ----MODAL TERMINOS Y CONDICIONES ----MODAL TERMINOS Y CONDICIONES ----MODAL TERMINOS Y CONDICIONES ------>
+      <!-- MODAL TERMINOS Y CONDICIONES ----MODAL TERMINOS Y CONDICIONES ----MODAL TERMINOS Y CONDICIONES ----MODAL TERMINOS Y CONDICIONES ------>
+      <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content align-items-center">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="borrar()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+            </div>
+
+
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#confirmar-compra1">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#confirmar-compra">Much longer nav link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              </ul>
+            <a href="" class="" data-toggle="modal" data-target="#exampleModal7">Confirmar</a>
+            
+           
+            
+            <div id="confirmar-compra" aria-current="page">
+              jhvjhv
+            </div>
+            <div id="confirmar-compra1" aria-current="page">
+              jhvjhv
+              kjbkjbkjbkjb<br>
+            </div>
+            <div id="confirmar">
+              jhvjhv
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content align-items-center">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="borrar()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+        <h1 class="modal-title text-center negro" id="exampleModalLabel">ROQUE</h1>
+        <div class="modal-body">
+          <h6 class="negro">ueso fermentado de castañas de cajú
+            ideal para acompañar desayunos y preparaciones
+            tanto saladas como dulces.
+          </h6><br>
+          <p class="negro"> Una vez abierto conservar refrigerado, cubierto con papel o tela, dentro de un
+            recipiente
+            cerrado.
+            Contiene microorganismos vivos, esto cambiará el saborlentamente con el pasar de los días.</p>
+          <br>
+          <img class="img-fluid" src="img/untable-info.png">
+
+          <p class="negro">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas
+              frecuentes</a></p>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  </div>
   </div>
   </div>
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
