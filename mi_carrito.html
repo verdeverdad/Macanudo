@@ -249,37 +249,208 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content align-items-center">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="borrar()">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
 
             </div>
+            <div class="modal-body">
+
+              <nav>
+                <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                  <a class="nav-link active" id="confirmar-tab" data-bs-toggle="tab" data-bs-target="#confirmar"
+                    role="tab" aria-controls="confirmar" aria-selected="true">Paso 1</a>
+                  <a class="nav-link" id="entrega-tab" data-bs-toggle="tab" data-bs-target="#entrega" role="tab"
+                    aria-controls="entrega" aria-selected="false">paso 2</a>
+                  <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Paso 3</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="confirmar" role="tabpanel" aria-labelledby="confirmar-tab">
+                  <br>
+                  <h5 class="text-center">Confirmar compra</h5> <br>
+                  <div class="card p-0 mb-5">
+                    <div class="card-header">
+                      <h4 class="text-center">Resumen de la compra</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <table class="table table-sm btn-verde">
+                              <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr id="resumen-producto-1" class="producto">
+                                <td>CAMON-BERT</td>
+                                <td>380 $</td>
+                                <td><span id="resumen-cantidad-1">2</span></td>
+                                <td><span id="resumen-precio_multiplicado-1">380</span> $</td>
+                              </tr>
+                              <tr id="resumen-producto-2" class="producto" style="display: none;">
+                                <td>COLORADO</td>
+                                <td>450 $</td>
+                                <td><span id="resumen-cantidad-2"></span></td>
+                                <td><span id="resumen-precio_multiplicado-2"></span> $</td>
+                              </tr>
+                              <tr id="resumen-producto-3" class="producto" style="display: none;">
+                                <td>Hierbas</td>
+                                <td>380 $</td>
+                                <td><span id="resumen-cantidad-3"></span></td>
+                                <td><span id="resumen-precio_multiplicado-3"></span> $</td>
+                              </tr>
+                              <tr id="resumen-producto-4" class="producto">
+                                <td>Chiflado</td>
+                                <td>405 $</td>
+                                <td><span id="resumen-cantidad-4">2</span></td>
+                                <td><span id="resumen-precio_multiplicado-4">405</span> $</td>
+                              </tr>
+                              <tr id="resumen-producto-5" class="producto" style="display: none;">
+                                <td>Untable</td>
+                                <td>330 $</td>
+                                <td><span id="resumen-cantidad-5"></span></td>
+                                <td><span id="resumen-precio_multiplicado-5"></span> $</td>
+                              </tr>
+                              <tr id="resumen-producto-6" class="producto" style="display: none;">
+                                <td>EL-ROQUE</td>
+                                <td>380 $</td>
+                                <td><span id="resumen-cantidad-6"></span></td>
+                                <td><span id="resumen-precio_multiplicado-6"></span> $</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-md-4 bg-info">
+                          <div class="float-right pl-2">
+                            <p>SubTotal: <span id="resumen_sub_total_de_la_compra">785</span> $ UYU</p>
+                            <p>Envío: <span id="resumen_costo_de_envio_final">0</span> $ UYU</p>
+                            <p class="porcentage_de_descuento" style="display: none;">Descuento: <span
+                                id="resumen_porcentage_de_descuento">0</span> %</p>
+                            <p class="h5">Total: <span id="resumen_total_de_la_compra">785</span> $ UYU</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-lg shadown bg-light text-center" style="color: #4554a4;"
+                        id="">
+                        <strong>Confirmar
+                          compra </strong></button>
+                    </div>
+                  </div>
+                </div>
 
 
-            <ul class="nav nav-pills nav-fill">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#confirmar-compra1">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#confirmar-compra">Much longer nav link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              </ul>
-            <a href="" class="" data-toggle="modal" data-target="#exampleModal7">Confirmar</a>
-            
-           
-            
-            <div id="confirmar-compra" aria-current="page">
-              jhvjhv
-            </div>
-            <div id="confirmar-compra1" aria-current="page">
-              jhvjhv
-              kjbkjbkjbkjb<br>
-            </div>
-            <div id="confirmar">
-              jhvjhv
+
+                <div class="tab-pane fade" id="entrega" role="tabpanel" aria-labelledby="entrega-tab">
+                  <h5 class="text-center">Confirmar compra</h5> <br>
+
+                  <form id="form_crear_pedido" action="https://macanudonoqueso.com/pagos" method="POST">
+                    <input type="hidden" name="_token" value="y2RvG63WTzskisjey4JXl5A0E1vvF4REqonjUlsM">					<input type="hidden" name="_method" value="POST">
+                    <div class="cardd" id="panel_completar_datos_del_pedido">
+                      <div class="card-headerr">
+                        <h4 class="text-center">Datos de envío</h4>
+                      </div>
+          
+                      <div class="card-bodyy">
+                        
+                        <div class="row">
+                          <div class="col-lg-6 ">
+          
+                            <!--input para el nombre-->
+                            <div class="form-group mb-3">
+                              <label for="nombre">Nombre</label>
+                              <input required="" type="text" class="form-control" id="nombre" name="nombre" placeholder="..." value="">
+                                                </div>
+          
+                            <!--input para el email-->
+                            <div class="form-group mb-3">
+                              <label for="email">Email</label>
+                              <input required="" type="text" class="form-control" id="email" name="email" placeholder="..." value="">
+                                                </div>
+          
+                            <!--input para el documento_de_identidad-->
+                            <div class="form-group mb-3">
+                              <label for="documento_de_identidad">Documento de identidad</label>
+                              <input style="width: 100%;" type="number" class="form-control" id="documento_de_identidad" name="documento_de_identidad" placeholder="..." value="" min="0">
+                                                </div>
+          
+                            <!--input para el telefono-->
+                            <div class="form-group mb-3">
+                              <label for="telefono">Teléfono</label>
+                              <input style="width: 100%;" type="number" class="form-control" id="telefono" name="telefono" placeholder="..." value="" min="0">
+                                                </div>
+          
+                          </div>
+                        
+                          <div class="col-lg-6">
+                            
+                            <!--input para la direccion-->
+                            <div class="form-group mb-3">
+                              <label for="direccion">Dirección</label>
+                              <textarea required="" class="form-control" id="direccion" name="direccion" rows="3"></textarea>
+                                                </div>
+          
+                            <!--input para la localidad-->
+                            <div class="form-group mb-3">
+                              <label for="localidad">Localidad o barrio</label>
+                              <input type="text" class="form-control" id="localidad" name="localidad" placeholder="..." value="">
+                                                </div>
+          
+                            <!--input para checkbox Recibir novedades -->
+                            <div class="form-check my-4">
+                              <input type="checkbox" class="form-check-input" id="recibir_novedades" name="recibir_novedades" value="1">
+                              <label class="form-check-label" for="recibir_novedades">Recibir novedades</label>
+                                                </div>
+          
+                          </div>
+          
+                          <!--input para la departamento-->
+                          <!--<input type="hidden" id="departamento" name="departamento" value="">-->
+                          <!--input para la Pais-->
+                          <!--<input type="hidden" id="pais" name="pais" value="">-->
+                          <!--input para el status-->
+                          <!--<input type="hidden" id="status" name="status" value="pedido">-->
+                          <!--input para el tipo-->
+                          <input type="hidden" id="tipo" name="tipo" value="pedido normal">
+                          <!--input para la Costo de envio id-->
+                          <input type="hidden" id="costo_de_envio_id" name="costo_de_envio_id" value="">
+                          <!--input para la Cupon id-->
+                          <input type="hidden" id="nombre_del_cupon" name="nombre_del_cupon" value="">
+                          <!--input para la medio de pago-->
+                          <input type="hidden" id="medio_de_pago" name="medio_de_pago" value="">
+                          <!--input para el monto-->
+                          <input type="hidden" id="monto" name="monto" value="785">
+                          <!--input para el tipo_de_cliente-->
+                          <input type="hidden" id="tipo_de_cliente" name="tipo_de_cliente" value="cliente del ecommerce">
+                          <!--input para el numero_de_factura-->
+                          <input type="hidden" id="numero_de_factura" name="numero_de_factura" value="555">
+                          <!--input para el productos-->
+                          <input type="hidden" id="productos" name="productos[]" value="4,1">
+                          <!--input para el cantidades-->
+                          <input type="hidden" id="cantidades" name="cantidades[]" value="1,1">
+                          <!--input para el numero_de_factura-->
+                          <input type="hidden" id="numero_de_factura" name="numero_de_factura" value="001">
+                            
+                        </div>
+          
+                        <div class="d-flex justify-content-center">
+                          <button type="submit" class="btn btn-outline-success btn-block btn-lg w-50">Selecciona el medio de pago</button>
+                        </div>
+          
+          
+                      </div>
+                    </div>
+          
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+              </div>
             </div>
           </div>
         </div>
@@ -289,43 +460,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content align-items-center">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="borrar()">
-            <span aria-hidden="true">&times;</span>
-          </button>
 
-        </div>
-        <h1 class="modal-title text-center negro" id="exampleModalLabel">ROQUE</h1>
-        <div class="modal-body">
-          <h6 class="negro">ueso fermentado de castañas de cajú
-            ideal para acompañar desayunos y preparaciones
-            tanto saladas como dulces.
-          </h6><br>
-          <p class="negro"> Una vez abierto conservar refrigerado, cubierto con papel o tela, dentro de un
-            recipiente
-            cerrado.
-            Contiene microorganismos vivos, esto cambiará el saborlentamente con el pasar de los días.</p>
-          <br>
-          <img class="img-fluid" src="img/untable-info.png">
-
-          <p class="negro">¿Más datos? Consultá la sección de <a href="preguntas_frecuentes.html">preguntas
-              frecuentes</a></p>
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
   <!--  FOOTER --- FOOTER ---- FOOTER ----FOOTER --- FOOTER ---- FOOTER----->
