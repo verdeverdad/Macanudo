@@ -445,3 +445,43 @@ h1 {
   box-shadow: -5px 1px 3px 2px var(--lila);
   
 }
+
+
+
+.curso {
+  /*Le damos al contenedor las medidas de la imagen y lo centramos*/
+
+
+  /* Esto es importante. Para posicionar el ::before
+  de forma absoluta, necesitamos que el contenedor
+  tenga position:relative */
+
+  position:relative;
+}
+
+.curso::after {
+  position:absolute;
+  top:0;
+  left:0;
+  display: block;
+  box-sizing:border-box;
+  content:"AGOTADO";
+  text-transform:uppercase;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  text-align:center;
+  font-weight: 700;
+  color: #fff;
+
+  /*Le damos medidas estas y color para verlo
+  ahora más claro, pero luego lo modificaremos*/
+
+  background: red;           
+  width:150px;}
+
+  .curso::after {
+    border:15px solid rgb(255, 0, 0);
+
+    box-shadow: 0px 3px 5px -3px #000;
+
+}
