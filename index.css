@@ -456,13 +456,13 @@ h1 {
   de forma absoluta, necesitamos que el contenedor
   tenga position:relative */
 
-  position:relative;
+  position:absolute;
 }
 
 .curso::after {
-  position:absolute;
-  top:0;
-  left:0;
+  position:relative;
+  top:-60px ;
+  left: 190px;
   display: block;
   box-sizing:border-box;
   content:"AGOTADO";
@@ -472,6 +472,7 @@ h1 {
   text-align:center;
   font-weight: 700;
   color: #fff;
+  opacity:60% ;
 
   /*Le damos medidas estas y color para verlo
   ahora más claro, pero luego lo modificaremos*/
