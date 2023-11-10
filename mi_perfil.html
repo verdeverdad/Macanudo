@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
 
     <link href="index.css" rel="stylesheet">
+    <link href="dropzone.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/animations.css">
     <!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
@@ -26,6 +27,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/dropzone.js"></script>
+
 
 </head>
 
@@ -82,19 +85,21 @@
     </div>
 
     <div class="container px-4">
+
         <div class="row">
+
             <div class="col-sm-3"></div>
 
             <div class="col-sm-6 card">
                 <img src="img/fot.png" class="card-img-top" style="max-width:350px ; align-self: center;">
                 <div class="card-title text-center">
-                    <h3>Mi nombre</h3><br>
+                    <h3>Verde Verdad</h3><br>
                 </div>
                 <div class="card-body">
                     <br>
-                    <h6 class="mr-5"><a class="link" data-toggle="modal" data-target="#exampleModal" style="color: #1e1e1e;">
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                    <h6 class="mr-5"><a class="link" data-toggle="modal" data-target="#exampleModal"
+                            style="color: #1e1e1e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
                                 class="bi bi-person-circle mr-5" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                 <path fill-rule="evenodd"
@@ -189,41 +194,30 @@
                         <div class="form-row">
                             <div class="form-group col-sm">
                                 <label for="nombre">Nombre completo: </label>
-                                <input type="text" class="form-control" id="nombre"
-                                    placeholder="Ingrese su nombre completo" required>
+                                <input type="text" class="form-control" id="nombre" placeholder="..." required>
                             </div>
 
                         </div>
                         <div class="form-group ">
                             <label for="email">Email: </label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingrese su Email" required>
+                            <input type="email" class="form-control" id="email" placeholder="..." required>
                         </div>
 
                         <div class="form-row">
                             <div class="form group col-sm">
                                 <label for="nContacto">Número de contacto: </label>
-                                <input type="text" class="form-control" id="nContacto"
-                                    placeholder="Ingrese su número de contacto" required>
+                                <input type="text" class="form-control" id="nContacto" placeholder="..." required>
                             </div>
 
                         </div>
                         <div class="form-row">
                             <div class="form group col-sm">
                                 <label for="nContactoAlt">Contacto alternativo: </label>
-                                <input type="text" class="form-control" id="nContactoAlt"
-                                    placeholder="Ingrese su número de contacto" required>
+                                <input type="text" class="form-control" id="nContactoAlt" placeholder="..." required>
                             </div>
 
                         </div>
-                        <div class="form-row">
-                            <div class="form group col-sm">
-                                <label for="nCedula">Número de cédula: </label>
-                                <input type="text" class="form-control" id="nCedula"
-                                    placeholder="Ingrese su número de contacto" required>
-                            </div>
-
-                        </div>
-
+                        <!---->
                         <div class="form-row">
                             <div class="form-group col-sm-6">
                                 <label for="contraseña">Contraseña:</label>

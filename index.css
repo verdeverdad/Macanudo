@@ -10,7 +10,7 @@
   --negro: #1e1e1e;
   --gris: #e5e6e1;
 
-  --marro: #a0240e;
+  --marron: #a0240e;
   --maca: #f5ec00;
   --ajo: #3b3c34;
 }
@@ -167,6 +167,11 @@ footer svg {
 
 .shadown-blanco {
   box-shadow: 2px 2px 2px var(--blanco);
+
+}
+
+.shadown-ajo {
+  box-shadow: 2px 2px 2px var(--negro);
 
 }
 
@@ -337,6 +342,10 @@ footer svg {
   color: var(--gris);
 }
 
+.ajo {
+  color: var(--ajo);
+}
+
 .blanco {
   color:var(--blanco);
 }
@@ -373,6 +382,9 @@ footer svg {
 .btn-blanco {
   background-color: var(--blanco) ;
 }
+.btn-ajo{
+  background-color: var(--ajo) ;
+}
 
 .btn-derecho {
   position: absolute;
@@ -399,6 +411,50 @@ footer svg {
   position: absolute;
   bottom: 10px;
   right: 165px;
+}
+.precio-prod {
+  position: absolute;
+  bottom: 50px;
+  right: 90px;
+}
+.precio-prod1 {
+  position: absolute;
+  bottom: 70px;
+  right: 90px;
+}
+
+.precio-prod2 {
+  position: absolute;
+  bottom: 60px;
+  right: 50px;
+  background-color: var(--ajo);
+  box-shadow: 4px 6px 6px var(--negro);
+
+}
+
+.precio-prod3 {
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+}
+
+.precio-prod4 {
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+}
+
+.precio-prod5 {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+}
+.precio-prod-sm{ 
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  box-shadow: 2px 2px 2px var(--negro);
+
 }
 
 .tituloProducto {
