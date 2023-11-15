@@ -414,8 +414,9 @@ footer svg {
 }
 .precio-prod {
   position: absolute;
-  bottom: 50px;
-  right: 90px;
+  bottom: 55px;
+  right: 84px;
+  box-shadow: 2px 2px 2px var(--negro);
 }
 .precio-prod1 {
   position: absolute;
@@ -451,8 +452,8 @@ footer svg {
 }
 .precio-prod-sm{ 
   position: absolute;
-  bottom: 50px;
-  right: 20px;
+  bottom: 55px;
+  right: 60px;
   box-shadow: 2px 2px 2px var(--negro);
 
 }
