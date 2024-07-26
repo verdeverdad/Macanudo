@@ -573,3 +573,42 @@ h1 {
 .text-block span {
   transform: rotate(-45deg);
  }
+
+ :root {
+  --color-green: #00a878;
+  --color-red: #fe5e41;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+.switch-button, .switch-button2, .switch-button3 {
+  display: inline-block;
+  text-align: right;
+}
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+.switch-button .switch-button__label {
+  background-color: var(--rojo);
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--gris);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--negro);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--verde-claro);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(2rem);
+}
