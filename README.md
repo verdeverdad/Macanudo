@@ -28,7 +28,7 @@ Diseñar y desarrollar un **sitio web de e-commerce accesible y funcional**, cap
 ---
 
 ## 👩‍💻 Rol
-**Diseñadora UX/UI y desarrolladora Front-End.**
+**Diseñadora UX/UI y desarrolladora Front-End. Coordinadora de proyecto.**
 
 ---
 
@@ -36,10 +36,8 @@ Diseñar y desarrollar un **sitio web de e-commerce accesible y funcional**, cap
 - Diseño UX/UI del sitio completo.  
 - Adaptación de la identidad visual y definición de la estética general.  
 - Desarrollo **Front-End (HTML, CSS, JavaScript, Bootstrap)**.  
-- Coordinación con el desarrollador **Back-End** (Laravel, Django, Python).  
-- Redacción de textos y gestión de contenidos.  
-- Organización de tiempos, entregas y comunicación con el cliente.  
-- Integración de **Google Maps API** (mapa personalizado).  
+- Coordinación con el desarrollador **Back-End**.  
+- Redacción de textos y gestión de contenidos.   
 - Configuración del **formulario de contacto** con un servicio externo.  
 - Pruebas de usabilidad y optimización SEO.
 
@@ -48,10 +46,12 @@ Diseñar y desarrollar un **sitio web de e-commerce accesible y funcional**, cap
 ## 🧱 Tecnologías utilizadas
 - **Front-End:** HTML, CSS, JavaScript, Bootstrap  
 - **Back-End:** Laravel, Django, Python *(implementado por otro desarrollador)*  
-- **Integraciones:** Google Maps API, Mercado Pago API, servicio externo para formularios  
-- **Herramientas UX/UI:** Figma, Google Drive, Trello  
+- **Integraciones:** Google Maps API, Mercado Pago API 
+- **Herramientas UX/UI:** Figma, Google Drive 
 - **Versionado:** Git / GitHub
 
+El proyecto se desarrolló en colaboración con otro desarrollador encargado del back-end y la base de datos, utilizando Laravel, Django y MySQL.
+Mi foco principal fue el diseño y desarrollo del front-end, la experiencia del usuario y la integración visual de las funcionalidades del sitio.
 ---
 
 ## 🚀 Desarrollo y proceso
@@ -71,7 +71,7 @@ Se trabajó estrechamente con el cliente en reuniones periódicas, lo que permit
 - Sistema de gestión de suscriptores y clientes.  
 - Personalización de entregas por departamento a través de Google Maps.  
 - Puntaje del **93% en Lighthouse** en accesibilidad y rendimiento.  
-- La web estuvo activa durante más de un año, acompañando el crecimiento del negocio hasta su posterior migración a WordPress.  
+- La web estuvo activa durante más de dos año, acompañando el crecimiento  del negocio hasta su posterior migración a WordPress.  
 
 ---
 
@@ -81,6 +81,7 @@ Este proyecto consolidó mi experiencia en **diseño UX aplicado a proyectos rea
 Aprendí a **equilibrar decisiones técnicas, visuales y estratégicas**, manteniendo siempre el enfoque en el **usuario final** y en los **objetivos del negocio**.  
 
 También comprendí que el **UX requiere ser defendido y comunicado**, ya que su valor no siempre es comprendido por todos los actores del proyecto.  
+
 Aplicar **buenas prácticas** y evitar **sesgos o patrones engañosos** fue clave para construir una experiencia digital clara, accesible y coherente con la marca.
 
 ---
