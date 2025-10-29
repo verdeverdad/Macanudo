@@ -1,4 +1,4 @@
-# Macanudo# 🧀 Macanudo — E-commerce de quesos veganos
+# 🧀 Macanudo — E-commerce de quesos veganos
 
 ## 📝 Introducción
 **Macanudo** es un emprendimiento familiar uruguayo que elabora *“quesos” de castañas de cajú*, 100% veganos.  
